@@ -62,7 +62,7 @@ dir_ls('code-data-zip') %>%
   str_remove("code-data-zip/") %>% 
   str_remove(".zip") %>% 
   as_tibble() %>% 
-  mutate(下载链接 = paste0("https://czxa.github.io/code-data-zip/", value, ".zip")) %>% 
+  mutate(下载链接 = paste0("https://czxa.github.io/stata-highmaps/code-data-zip/", value, ".zip")) %>% 
   mutate(下载链接 = paste0("<a href='", 下载链接, "'>", value, "</a>")) %>% 
   rename(`国家/地区` = value) %>% 
   knitr::kable()
